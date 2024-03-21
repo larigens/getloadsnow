@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --dark-shades: #0a1128;
+  --dark-accent: #14213d;
+  --main-brand: #034078;
+  /* --light-accent: #67B6EF; */
+  --light-accent: #5ea7db;
+  --light-shades: #fefcfb;
+  --gradient-dark: linear-gradient(45deg, var(--dark-accent), var(--dark-shades), var(--dark-accent), var(--dark-shades));
+  --gradient-bg: linear-gradient(45deg, var(--dark-shades), var(--main-brand), var(--dark-accent));
+  --gradient: -webkit-linear-gradient(30deg, var(--light-accent), var(--light-shades), var(--light-accent));
+  --gradient-light: -webkit-linear-gradient(30deg, var(--light-shades), var(--light-accent), var(--light-shades));
+  --body: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+textarea {
+  resize: none !important;
+  white-space: pre-wrap !important;
+  /* Any line breaks or multiple spaces that were entered in the textarea will be preserved and displayed */
+}
+
+.glassmorphism {
+  background: rgba(20, 33, 61, 0.15) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(0px) !important;
+  -webkit-backdrop-filter: blur(0px) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+.white-img {
+  filter: brightness(0) invert(1);
+}
+
+/* Colors */
+.dark-shades {
+  color: var(--dark-shades) !important;
+}
+
+.dark-accent {
+  color: var(--dark-accent) !important;
+}
+
+.main-brand {
+  color: var(--main-brand) !important;
+}
+
+.light-accent {
+  color: var(--light-accent) !important;
+}
+
+.light-accent-hv:hover {
+  color: var(--light-accent) !important;
+}
+
+.light-shades {
+  color: var(--light-shades) !important;
+}
+
+footer {
+  background-color: var(--dark-accent);
+  height: 18vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  vertical-align: middle;
+  color: var(--light-shades)
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  background-color: var(--dark-accent);
 }
