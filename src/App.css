@@ -3,7 +3,8 @@
 :root {
   --dark-shades: #0a1128;
   --dark-accent: #14213d;
-  --main-brand: #034078;
+  /* --main-brand: #034078; */
+  --main-brand: #295f95;
   /* --light-accent: #67B6EF; */
   --light-accent: #5ea7db;
   --light-shades: #fefcfb;
@@ -68,17 +69,6 @@ textarea {
   color: var(--light-shades) !important;
 }
 
-footer {
-  background-color: var(--dark-accent);
-  height: 18vh;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  vertical-align: middle;
-  color: var(--light-shades)
-}
-
-header {
+footer, header {
   background-color: var(--dark-accent);
 }

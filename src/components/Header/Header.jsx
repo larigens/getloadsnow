@@ -1,27 +1,25 @@
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import logo from '../../assets/logo.png';
+import { Row, Col, Image } from 'react-bootstrap';
+import logo from '../../assets/logo2.png';
+import { Link } from 'react-router-dom';
 
 export const Header = (props) => {
   return (
     <header>
-    <Container>
-      <Row lg={3} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <Col lg={{ order: 1 }}>
-          <Image
-            src={logo}
-            alt="logo"
-            width={115}
-            style={{ margin: '12px 0px 2px 15px' }}
-          />
+      <Row className='mx-2 align-items-center'>
+        <Col xs={6} md={3}>
+          <Link to='/'>
+            <Image
+              src={logo}
+              alt="logo"
+              width={130}
+              className='mt-2 img-fluid'
+            />
+          </Link>
         </Col>
-        <Col lg={{ order: 2 }}>
-          <h2 className='light-accent'>Your go-to platform for load board and freight management.</h2>
-        </Col>
-        <Col lg={{ order: 3 }}>
+        <Col xs={6} md={9} className='d-flex justify-content-end'>
           {props.children}
         </Col>
       </Row>
-    </Container>
     </header>
   );
 };

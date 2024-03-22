@@ -1,25 +1,25 @@
-import { Container, Row, Image } from 'react-bootstrap';
+import { Container, Image } from 'react-bootstrap';
 import '../App.css';
 import banner from '../assets/banner.png';
 
 export const Home = () => {
     return (
-        <Container className="p-3 my-4" style={{ marginTop: '40px' }}>
-            <Row>
-                <center>
+        <>
+            <Container className="d-flex align-items-center justify-content-center my-4">
+                <Container fluid className="p-0">
                     <iframe
                         title="gsf load board"
-                        style={{ border: 'none', width: '100%', maxWidth: '1900px', height: '1100px' }}
-                        allow="fullscreen"
-                        width={100}
-                        // scrolling="no"
+                        style={{ border: 'none', width: '100%', height: '1100px' }}
                         src="https://www.directfreight.com/gsquared-home/loads/search"
                     ></iframe>
-                </center>
-            </Row>
-            <Row style={{ textAlign: 'center', marginBottom: '40px', height: '70vh' }}>
-                <Image src={banner} width={1000} />
-            </Row>
-        </Container>
+                </Container>
+            </Container>
+
+            <Container className='text-center my-4'>
+                <a href='https://gsquaredfunding.com/' target="_blank" rel="noopener noreferrer" >
+                    <Image src={banner} fluid />
+                </a>
+            </Container>
+        </>
     );
 };
