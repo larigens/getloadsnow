@@ -23,14 +23,14 @@ export const NavBar = () => {
         },
         {
             id: 3,
-            name: 'Resources',
-            href: '/resources',
-            current: location.pathname === '/resources'
+            name: 'Partners',
+            href: '/partners',
+            current: location.pathname === '/partners'
         }
     ];
 
     return (
-        <Navbar expand="md" data-bs-theme="dark">
+        <Navbar expand="lg" data-bs-theme="dark">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto" >

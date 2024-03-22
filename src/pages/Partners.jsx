@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 
-function Resources() {
+function Partners() {
     return (
         <Container>
             <Row className="my-5">
@@ -14,4 +14,4 @@ function Resources() {
     );
 }
 
-export default Resources;
+export default Partners;

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Get Loads Now",
+  "name": "Load Board",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,9 +13,19 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo180.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "180x180"
+    },
+    {
+      "src": "logo32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "logo16.png",
+      "type": "image/png",
+      "sizes": "16x16"
     }
   ],
   "start_url": ".",
