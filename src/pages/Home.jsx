@@ -1,7 +1,7 @@
 import { Container, Image } from 'react-bootstrap';
 import '../App.css';
 import banner from '../assets/ad2.png';
-import HelmetCP from '../components/Helmet';
+import { HelmetCP } from '../components/Helmet';
 
 export const Home = () => {
     return (
@@ -12,7 +12,7 @@ export const Home = () => {
                     <iframe
                         title="gsf load board"
                         style={{ border: 'none', width: '100%', height: '1100px' }}
-                        src="https://www.directfreight.com/gsquared-home/loads/search"
+                        src="https://www.directfreight.com/gsquared-home/boards/find/loads"
                     ></iframe>
                 </Container>
             </Container>

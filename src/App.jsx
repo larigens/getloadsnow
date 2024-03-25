@@ -7,7 +7,7 @@ import { Home } from './pages/Home';
 import { Header } from './components/Header/Header';
 import { NavBar } from './components/Header/NavBar/NavBar';
 import { Footer } from './components/Footer';
-import Partners from './pages/Partners';
+import { Partners } from './pages/Partners';
 import ReactGA from 'react-ga';
 
 export const App = () => {
