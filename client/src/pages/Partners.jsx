@@ -4,6 +4,7 @@ import { CardCP } from '../components/Card';
 import gsfLogo from '../assets/partners/gsf.png';
 import aficwLogo from '../assets/partners/aficw.png';
 import factorsNetLogo from '../assets/partners/factorsnet.png';
+import { HelmetCP } from '../components/Helmet';
 
 export const Partners = () => {
 
@@ -35,11 +36,18 @@ export const Partners = () => {
     ]
 
     return (
-        <Container className='d-flex flex-wrap justify-content-center my-5'>
-            {partners.map((partner) => (
-                <CardCP key={partner.id} name={partner.name} href={partner.href} logo={partner.logo} subtitle={partner.subtitle} description={partner.description} />
-            ))}
-        </Container>
+        <>
+            <HelmetCP 
+            pageTitle={'Get Loads Now | Partners'} 
+            pageDescription={'Discover our partners who specialize in helping trucking companies boost profitability and achieve business growth. Access thousands of daily loads and receive valuable assistance from our trusted partners.'} 
+            pageKeywords={'load board, free load board, trucking partners, freight solutions, logistics assistance, transportation support, insurance for trucking companies, insurance for transportation companies, down payment assistance, load management, carrier services, freight brokerage, shipping solutions, trucking technology, supply chain optimization, factoring company, g squared funding, freight factoring, financial services'} 
+            />
+            <Container className='d-flex flex-wrap justify-content-center my-5'>
+                {partners.map((partner) => (
+                    <CardCP key={partner.id} name={partner.name} href={partner.href} logo={partner.logo} subtitle={partner.subtitle} description={partner.description} />
+                ))}
+            </Container>
+        </>
     );
 }
 
