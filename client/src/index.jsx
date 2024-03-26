@@ -4,6 +4,7 @@ import './index.css';
 import { App } from './App.jsx';
 import reportWebVitals from './reportWebVitals.js';
 import TagManager from 'react-gtm-module';
+import { HelmetProvider } from 'react-helmet-async';
 
 TagManager.initialize({
   gtmId: 'GTM-PXPN3PBQ'
@@ -12,7 +13,9 @@ TagManager.initialize({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </React.StrictMode>
 );
 
