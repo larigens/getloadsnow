@@ -30,7 +30,7 @@ export const NavBar = () => {
     ];
 
     return (
-        <Navbar expand="lg" data-bs-theme="dark">
+        <Navbar expand="lg" data-bs-theme="dark" className='mt-3'>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto" >
@@ -41,7 +41,7 @@ export const NavBar = () => {
                             to={link.href}
                             className={classNames(
                                 link.current ? 'light-accent' : 'light-shades light-accent-hv',
-                                'p-2 mr-3 fs-5 text',
+                                'p-2 mr-3 fs-5 text poppins-semibold',
                             )}
                             style={{ borderColor: '#5ea7db' }}
                         >
