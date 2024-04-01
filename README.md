@@ -114,10 +114,6 @@ For questions and support feel free to contact us via:
 
 <a href='mailto:larigens@gmail.com'>📧 Email </a>
 
-**Anastasia Marvova**
-
-<a href='mailto:anastasia19markova@gmail.com'>📧 Email </a>
-
 ## Contributing
 
 ### Contributing Guidelines
