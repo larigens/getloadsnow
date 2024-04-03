@@ -1,7 +1,7 @@
 <h1 align='center'> Get Loads Now </h1>
 
 <p align='center'>
-    <img src='./client/src/assets/logo.png' alt='logo' width='120px' height='120px' />
+    <img src='./client/src/assets/logo.png' alt='logo' width='155px' height='100px' />
   <br><br>
   <i> Load Board designed to
     <br> help transportation companies to find freights for free.</i>
