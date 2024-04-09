@@ -3,11 +3,11 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import { Home } from './pages/Home';
-import { Header } from './components/Header/Header';
-import { NavBar } from './components/Header/NavBar/NavBar';
-import { Footer } from './components/Footer';
-import { Partners } from './pages/Partners';
+import { Home } from './pages/Home.js';
+import { Header } from './components/Header/Header.js';
+import { NavBar } from './components/Header/NavBar/NavBar.js';
+import { Footer } from './components/Footer.js';
+import { Partners } from './pages/Partners.js';
 import ReactGA from 'react-ga';
 
 export const App = () => {

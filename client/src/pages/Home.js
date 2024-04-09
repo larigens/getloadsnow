@@ -1,7 +1,7 @@
 import { Container, Image } from 'react-bootstrap';
 import '../App.css';
 import banner from '../assets/ad2.png';
-import { HelmetCP } from '../components/Helmet';
+import { HelmetCP } from '../components/Helmet.js';
 
 export const Home = () => {
     return (
