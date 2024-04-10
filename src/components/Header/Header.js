@@ -8,7 +8,7 @@ export const Header = (props) => {
     <header className='mb-4'>
       <Row className='mx-2 align-items-center'>
         <Col xs={{ span: 6, order: 'first' }} md={{ span: 3, order: 'first' }}>
-          <Link as='a' href='/' to='/'>
+          <Link to='/'>
             <div className='d-flex align-items-center my-1'> {/* Wrap image and text in a div */}
               <Image
                 src={logo}
