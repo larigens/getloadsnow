@@ -38,7 +38,6 @@ export const NavBar = () => {
                         <Nav.Link
                             key={link.id}
                             as={Link}
-                            href={link.href}
                             to={link.href}
                             className={classNames(
                                 link.current ? 'light-accent' : 'light-shades light-accent-hv',
