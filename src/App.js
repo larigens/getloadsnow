@@ -9,6 +9,8 @@ import { NavBar } from './components/Header/NavBar/NavBar.js';
 import { Footer } from './components/Footer.js';
 import { Partners } from './pages/Partners.js';
 import ReactGA from 'react-ga';
+import { LoadMap } from './pages/LoadMap.js';
+import { PostTrucks } from './pages/PostTrucks.js';
 
 export const App = () => {
   useEffect(() => {
@@ -24,6 +26,8 @@ export const App = () => {
       <Container>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/LoadMap" element={<LoadMap />} />
+          <Route path="/PostTrucks" element={<PostTrucks />} />
           <Route path="/Partners" element={<Partners />} />
         </Routes>
       </Container>

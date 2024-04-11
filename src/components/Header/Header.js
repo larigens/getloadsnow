@@ -23,12 +23,12 @@ export const Header = (props) => {
             </div>
           </Link>
         </Col>
-        <Col xs={{ span: 12, order: 'last' }} md={{ span: 6, order: 'second' }} className='text-center my-2'>
+        <Col xs={{ span: 12, order: 'last' }} md={{ span: 4, order: 'second' }} className='text-center my-2'>
           <a href='https://gsquaredfunding.com/' target="_blank" rel="noopener noreferrer">
             <Image src={ad} alt="gsf ad" className='img-fluid' style={{ borderRadius: '10px' }} />
           </a>
         </Col>
-        <Col xs={{ span: 6, order: 'second' }} md={3} className='d-flex justify-content-end order-md-last ml-2'>
+        <Col xs={{ span: 6, order: 'second' }} md={5} className='d-flex justify-content-end order-md-last ml-2'>
           {props.children}
         </Col>
       </Row>

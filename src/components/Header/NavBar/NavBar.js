@@ -17,15 +17,27 @@ export const NavBar = () => {
         },
         {
             id: 2,
+            name: 'Load Map',
+            href: '/LoadMap',
+            current: location.pathname === '/LoadMap'
+        },
+        {
+            id: 3,
+            name: 'Post Trucks',
+            href: '/PostTrucks',
+            current: location.pathname === '/PostTrucks'
+        },
+        {
+            id: 4,
             name: 'Freight Factoring',
             href: 'https://gsquaredfunding.com/',
             current: location.pathname === '/freight-factoring'
         },
         {
-            id: 3,
+            id: 5,
             name: 'Partners',
-            href: '/partners',
-            current: location.pathname === '/partners'
+            href: '/Partners',
+            current: location.pathname === '/Partners'
         }
     ];
 
@@ -41,7 +53,7 @@ export const NavBar = () => {
                             to={link.href}
                             className={classNames(
                                 link.current ? 'light-accent' : 'light-shades light-accent-hv',
-                                'p-2 mr-3 fs-5 text poppins-semibold',
+                                'p-2 mr-2 fs-5 text poppins-semibold',
                             )}
                             style={{ borderColor: '#5ea7db' }}
                         >
