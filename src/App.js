@@ -11,6 +11,7 @@ import { Partners } from './pages/Partners.js';
 import ReactGA from 'react-ga';
 import { LoadMap } from './pages/LoadMap.js';
 import { PostTrucks } from './pages/PostTrucks.js';
+import { SubHeader } from './components/SubHeader.js';
 
 export const App = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ export const App = () => {
       <Header>
         <NavBar />
       </Header>
+      <SubHeader />
       <Container>
         <Routes>
           <Route path="/" element={<Home />} />

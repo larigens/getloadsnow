@@ -1,13 +1,13 @@
 import { Row, Col, Image } from 'react-bootstrap';
 import logo from '../../assets/logo5.png';
-import ad from '../../assets/ad1.png';
+// import ad from '../../assets/ad1.png';
 import { Link } from 'react-router-dom';
 
 export const Header = (props) => {
   return (
     <header className='mb-4'>
       <Row className='mx-2 align-items-center'>
-        <Col xs={{ span: 6, order: 'first' }} md={{ span: 3, order: 'first' }}>
+        <Col xs={10} sm={9} md={6} lg={{ span: 4, order: 'first' }}>
           <Link to='/'>
             <div className='d-flex align-items-center my-1'> {/* Wrap image and text in a div */}
               <Image
@@ -19,16 +19,11 @@ export const Header = (props) => {
                 loading="lazy" // Lazy loading
                 rel="preload" // Preloading
               />
-              <h4 className='light-shades ml-2 mb-0 mt-5 pt-3 logo-heading poppins-semibold'>Get Loads Now</h4> {/* Add margin-left and remove margin-top */}
+              <p className='light-shades ml-2 mb-0 mt-5 pt-3 logo-heading poppins-light'>Get Loads Now</p>
             </div>
           </Link>
         </Col>
-        <Col xs={{ span: 12, order: 'last' }} md={{ span: 4, order: 'second' }} className='text-center my-2'>
-          <a href='https://gsquaredfunding.com/' target="_blank" rel="noopener noreferrer">
-            <Image src={ad} alt="gsf ad" className='img-fluid' style={{ borderRadius: '10px' }} />
-          </a>
-        </Col>
-        <Col xs={{ span: 6, order: 'second' }} md={5} className='d-flex justify-content-end order-md-last ml-2'>
+        <Col xs={2} sm={3} md={6} lg={{ span: 8, order: 'second' }} className='d-flex justify-content-end ml-2'>
           {props.children}
         </Col>
       </Row>

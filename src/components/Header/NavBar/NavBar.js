@@ -52,8 +52,8 @@ export const NavBar = () => {
                             as={Link}
                             to={link.href}
                             className={classNames(
-                                link.current ? 'light-accent' : 'light-shades light-accent-hv',
-                                'p-2 mr-2 fs-5 text poppins-semibold',
+                                link.current ? 'active' : 'light-shades light-accent-hv',
+                                'p-2 mr-2 fs-18 text poppins-regular',
                             )}
                             style={{ borderColor: '#5ea7db' }}
                         >

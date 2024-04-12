@@ -35,6 +35,10 @@ textarea {
   filter: brightness(0) invert(1);
 }
 
+.fs-18 {
+  font-size: 18px !important;
+}
+
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -150,6 +154,7 @@ textarea {
   background-clip: none !important;
   /* Text-fill needs to be transparent to show the gradient */
   -webkit-text-fill-color: transparent !important;
+  font-size: 24px;
 }
 
 /* Colors */
@@ -170,7 +175,11 @@ textarea {
 }
 
 .light-accent-hv:hover {
-  color: var(--light-accent) !important;
+  color: #c1e1f8 !important;
+}
+
+.active {
+  color: #afdbfa !important;
 }
 
 .light-shades {
@@ -222,4 +231,22 @@ header {
 
 #btn:hover .card-body {
   color: var(--light-shades);
+}
+
+@media screen and (max-width: 1068px) {
+  .logo-heading {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .logo-heading {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .logo-heading {
+    display: none;
+  }
 }
