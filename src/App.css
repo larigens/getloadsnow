@@ -229,6 +229,22 @@ header {
   font-size: 26px;
 }
 
+/* Dropdown */
+
+.custom-dropdown {
+  color: var(--light-shades);
+}
+
+.custom-dropdown:hover,
+.custom-dropdown:focus {
+  color: #afdbfa !important;
+  ;
+}
+
+.custom-dropdown-item {
+  color: var(--light-shades);
+}
+
 #btn:hover .card-body {
   color: var(--light-shades);
 }

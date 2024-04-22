@@ -12,6 +12,9 @@ import ReactGA from 'react-ga';
 import { LoadMap } from './pages/LoadMap.js';
 import { PostTrucks } from './pages/PostTrucks.js';
 import { SubHeader } from './components/SubHeader.js';
+import { Login } from './pages/Login.js';
+import { ViewMyTrucks } from './pages/ViewMyTrucks.js';
+import { Recent } from './pages/Recent.js';
 
 export const App = () => {
   useEffect(() => {
@@ -30,7 +33,10 @@ export const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/LoadMap" element={<LoadMap />} />
           <Route path="/PostTrucks" element={<PostTrucks />} />
+          <Route path="/ViewMyTrucks" element={<ViewMyTrucks />} />
+          <Route path="/Recent" element={<Recent />} />
           <Route path="/Partners" element={<Partners />} />
+          <Route path='/Login' element={<Login />} />
         </Routes>
       </Container>
       <Footer />
