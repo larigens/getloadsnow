@@ -19,31 +19,31 @@ export const NavBar = () => {
         {
             id: 2,
             name: 'Load Map',
-            href: '/LoadMap',
-            current: location.pathname === '/LoadMap',
+            href: '/loadmap',
+            current: location.pathname === '/loadmap',
             isDropdown: false
         },
         {
             id: 3,
             name: 'Trucks',
-            href: '/Trucks',
-            current: location.pathname === '/Trucks',
+            href: '/trucks',
+            current: location.pathname === '/trucks',
             isDropdown: true,
             dropDownItems: [
                 {
                     id: '31',
                     name: 'Post Trucks',
-                    href: '/PostTrucks'
+                    href: '/posttrucks'
                 },
                 {
                     id: '32',
                     name: 'View My Trucks',
-                    href: '/ViewMyTrucks'
+                    href: '/viewmytrucks'
                 },
                 {
                     id: '33',
                     name: 'Recent Searches & Alerts',
-                    href: '/Recent'
+                    href: '/recent'
                 }
             ]
         },
@@ -58,14 +58,14 @@ export const NavBar = () => {
             id: 5,
             name: 'Partners',
             href: '/Partners',
-            current: location.pathname === '/Partners',
+            current: location.pathname === '/partners',
             isDropdown: false
         },
         {
             id: 6,
             name: 'Login',
             href: '/Login',
-            current: location.pathname === '/Login',
+            current: location.pathname === '/login',
             isDropdown: false
         }
     ];
