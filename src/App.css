@@ -35,8 +35,21 @@ textarea {
   filter: brightness(0) invert(1);
 }
 
+.white-img-hv:hover {
+  filter: brightness(0) invert(1);
+}
+
+.fs-22 {
+  font-size: 22px !important;
+}
+
 .fs-18 {
   font-size: 18px !important;
+}
+
+.w-80 {
+  width: 80px !important;
+  height: auto;
 }
 
 .poppins-thin {
@@ -167,6 +180,10 @@ textarea {
 }
 
 .main-brand {
+  color: var(--main-brand) !important;
+}
+
+.main-brand-hv:hover {
   color: var(--main-brand) !important;
 }
 

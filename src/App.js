@@ -15,6 +15,11 @@ import { SubHeader } from './components/SubHeader.js';
 import { Login } from './pages/Login.js';
 import { ViewMyTrucks } from './pages/ViewMyTrucks.js';
 import { Recent } from './pages/Recent.js';
+import { Logout } from './pages/Logout.js';
+import { MyAccount } from './pages/MyAccount.js';
+import { Profile } from './pages/Profile.js';
+import { Notes } from './pages/Notes.js';
+import { Documents } from './pages/Documents.js';
 
 export const App = () => {
   useEffect(() => {
@@ -38,6 +43,11 @@ export const App = () => {
           <Route path="/recent" element={<Recent />} />
           <Route path="/partners" element={<Partners />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/logout' element={<Logout />} />
+          <Route path='/my-account' element={<MyAccount />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/notes' element={<Notes />} />
+          <Route path='/documents' element={<Documents />} />
         </Routes>
       </Container>
       <Footer />

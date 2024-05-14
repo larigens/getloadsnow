@@ -63,10 +63,27 @@ export const NavBar = () => {
         },
         {
             id: 6,
-            name: 'Login',
-            href: '/Login',
-            current: location.pathname === '/login',
-            isDropdown: false
+            name: 'My Account',
+            href: '/my-account',
+            current: location.pathname === '/my-account',
+            isDropdown: true,
+            dropDownItems: [
+                {
+                    id: '61',
+                    name: 'My Account',
+                    href: '/my-account'
+                },
+                {
+                    id: '62',
+                    name: 'Login',
+                    href: '/login'
+                },
+                {
+                    id: '63',
+                    name: 'Log Out',
+                    href: '/logout'
+                }
+            ]
         }
     ];
 
