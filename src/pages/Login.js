@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { Banner } from '../components/Banner.js';
 import { HelmetCP } from '../components/Helmet.js';
+import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
     const [iframeLoaded, setIframeLoaded] = useState(false);
@@ -24,16 +24,8 @@ export const Login = () => {
                     {!iframeLoaded ? (
                         <>
                             <Container fluid className="p-2 my-4 d-flex align-items-center flex-column" style={{ minHeight: '30vh' }}>
-                                <h1 className="mb-3"> You are already logged in! </h1>
                                 <Row>
-                                    <Col>
-                                        <Link to='/' className='fs-22 light-accent text-none main-brand-hv fw-bold'>Find Loads</Link>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col>
-                                        <Link to='/logout' className='my-2 fs-22 light-accent text-none main-brand-hv fw-bold'>Log Out</Link>
-                                    </Col>
+                                    <RedirectLoginComponent />
                                 </Row>
                                 <Row className='mt-5'>
                                     <Col className='mt-5'>
@@ -55,3 +47,25 @@ export const Login = () => {
         </>
     );
 };
+
+const RedirectLoginComponent = () => {
+    let navigate = useNavigate();
+
+    useEffect(() => {
+        // redirect after 1.5 seconds
+        const redirectTimeout = setTimeout(() => {
+            navigate("/");
+        }, 1500);
+
+        // Clean up the timeout to avoid memory leaks
+        return () => clearTimeout(redirectTimeout);
+    }, [navigate]);
+
+    return (
+        <div>
+            <h1>Redirecting...</h1>
+        </div>
+    );
+}
+
+export default RedirectLoginComponent;
