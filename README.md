@@ -89,22 +89,11 @@ Once you run this, npm will begin the installation process of all of the current
 
 ## Mock-Up
 
-The following animations and images shows the web application's appearance and functionality:
+The following video shows the web application's appearance and functionality:
 
 <div align='center'>
 
-<!-- The script tag should live in the head of your page if at all possible -->
-<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
-
-<!-- Put this wherever you would like your player to appear -->
-<img
-  style="width: 100%; margin: auto; display: block;"
-  class="vidyard-player-embed"
-  src="https://play.vidyard.com/HEJmKbU1AzjYxcDWWHaLTy.jpg"
-  data-uuid="HEJmKbU1AzjYxcDWWHaLTy"
-  data-v="4"
-  data-type="inline"
-/>
+[![Video Placeholder](https://play.vidyard.com/HEJmKbU1AzjYxcDWWHaLTy.jpg)](https://share.vidyard.com/watch/HEJmKbU1AzjYxcDWWHaLTy?)
 
 </div>
 
