@@ -1,7 +1,7 @@
 <h1 align='center'> Get Loads Now </h1>
 
 <p align='center'>
-    <img src='./client/src/assets/logo.png' alt='logo' width='155px' height='100px' />
+    <img src='./src/assets/logo.png' alt='logo' width='155px' height='100px' />
   <br><br>
   <i> Load Board designed to
     <br> help transportation companies to find freights for free.</i>
@@ -26,9 +26,8 @@
 <div align='center'>
 
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-4b0082?logo=bootstrap&logoColor=white)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-000000?logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
 
 </div>
@@ -47,6 +46,8 @@ Key Features:
  - **Efficient Search**: Quickly filter and search for freights based on your specific criteria, allowing you to find the right loads with ease.
  - **Real-Time Updates**: Stay informed with real-time updates on available loads, ensuring you never miss out on any opportunities.
  - **Reliable Support**: Our dedicated support team is here to assist you with any questions or issues you may encounter.
+
+G Squared Funding and Get Loads Now are trademarks of G Squared Funding, LLC.
 
 ## Table of Contents
 
@@ -92,7 +93,18 @@ The following animations and images shows the web application's appearance and f
 
 <div align='center'>
 
-<img src='./assets/homepage.gif' alt='App Screenshot' width='600px' height='300px' />
+<!-- The script tag should live in the head of your page if at all possible -->
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+
+<!-- Put this wherever you would like your player to appear -->
+<img
+  style="width: 100%; margin: auto; display: block;"
+  class="vidyard-player-embed"
+  src="https://play.vidyard.com/HEJmKbU1AzjYxcDWWHaLTy.jpg"
+  data-uuid="HEJmKbU1AzjYxcDWWHaLTy"
+  data-v="4"
+  data-type="inline"
+/>
 
 </div>
 
@@ -101,7 +113,7 @@ The following animations and images shows the web application's appearance and f
 Launch the application by entering the command below on your terminal:
 
 ```bash
-npm run develop
+npm start
 ```
 
 Or access it through our oficial website [Get Loads Now](https://getloadsnow.com/)
@@ -112,7 +124,9 @@ For questions and support feel free to contact us via:
 
 **Larissa Guilherme**
 
-<a href='mailto:larigens@gmail.com'>📧 Email </a>
+<a href='mailto:larigens@gmail.com'>📧 Email Me </a>
+<br>
+<a href='mailto:larigens@gsquaredfunding.com'>📧 Email Company </a>
 
 ## Contributing
 
@@ -139,9 +153,7 @@ Our Code of Conduct follows the same principles as the [Contributor Covenant](ht
 
 - [W3 Schools](https://www.w3schools.com)
 - [MDN](https://developer.mozilla.org/en-US/)
-- [Node.js](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
-- [Express.js](https://expressjs.com/en/4x/api.html)
 - [Stack Overflow](https://stackoverflow.com/)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [React](https://react.dev/learn)
