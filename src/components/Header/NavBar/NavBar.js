@@ -18,32 +18,64 @@ export const NavBar = () => {
         },
         {
             id: 2,
-            name: 'Load Map',
-            href: '/loadmap',
-            current: location.pathname === '/loadmap',
-            isDropdown: false
-        },
-        {
-            id: 3,
-            name: 'Trucks',
-            href: '/trucks',
-            current: location.pathname === '/trucks',
+            name: 'Carriers & Owner Operators',
+            href: '/carriers',
+            current: location.pathname === '/carriers',
             isDropdown: true,
             dropDownItems: [
                 {
-                    id: '31',
+                    id: '20',
+                    name: 'Load Map',
+                    href: '/carriers/loadmap'
+                },
+                {
+                    id: '21',
                     name: 'Post Trucks',
-                    href: '/posttrucks'
+                    href: '/carriers/posttrucks'
+                },
+                {
+                    id: '22',
+                    name: 'View My Trucks',
+                    href: '/carriers/viewmytrucks'
+                },
+                {
+                    id: '23',
+                    name: 'Recent Searches & Alerts',
+                    href: '/carriers/recent'
+                }
+            ]
+        },
+        {
+            id: 3,
+            name: 'Shippers & Brokers',
+            href: '/brokers',
+            current: location.pathname === '/brokers',
+            isDropdown: true,
+            dropDownItems: [
+                {
+                    id: '30',
+                    name: 'Find Trucks',
+                    href: '/brokers/findtrucks'
+                },
+                {
+                    id: '31',
+                    name: 'Truck Map',
+                    href: '/brokers/truckmap'
                 },
                 {
                     id: '32',
-                    name: 'View My Trucks',
-                    href: '/viewmytrucks'
+                    name: 'Post Loads',
+                    href: '/brokers/postloads'
                 },
                 {
                     id: '33',
+                    name: 'View My Loads',
+                    href: '/brokers/viewmyloads'
+                },
+                {
+                    id: '34',
                     name: 'Recent Searches & Alerts',
-                    href: '/recent'
+                    href: '/brokers/recent'
                 }
             ]
         },

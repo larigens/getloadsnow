@@ -1,4 +1,3 @@
-import '../App.css';
 import { HelmetCP } from '../components/Helmet.js';
 import { Layout } from '../components/Layout.js';
 import React, { useEffect, useState } from 'react';

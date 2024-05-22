@@ -1,6 +1,5 @@
-import '../App.css';
-import { HelmetCP } from '../components/Helmet.js';
-import { Layout } from '../components/Layout.js';
+import { HelmetCP } from '../../components/Helmet.js';
+import { Layout } from '../../components/Layout.js';
 
 export const LoadMap = () => {
     const source = 'https://www.directfreight.com/gsquared-home/loads/map'

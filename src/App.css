@@ -21,7 +21,8 @@
   box-sizing: border-box;
 }
 
-a {
+a,
+.text-none {
   text-decoration: none !important;
 }
 
@@ -222,6 +223,17 @@ header {
 }
 
 /* Button Style */
+.signup-btn {
+  border-radius: 20px;
+  background: var(--light-accent);
+  padding: 8px 20px;
+  color: var(--light-shades);
+}
+
+.signup-btn:hover {
+  background: var(--main-brand);
+}
+
 #btn {
   box-shadow: 0 5px 12px 0 rgba(31, 38, 135, 0.37);
 }

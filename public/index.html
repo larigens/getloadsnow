@@ -41,6 +41,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script type="text/javascript">
+    if (window.location.hash.length > 1) {
+      document.getElementById("df_iframe").src = "https://www.directfreight.com/gsquared-home/" + window.location.hash.replace("#", "");
+    }
+  </script>
 
 </body>
 

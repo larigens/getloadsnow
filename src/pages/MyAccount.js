@@ -7,19 +7,19 @@ export const MyAccount = () => {
         {
             id: 1,
             name: 'My Profile',
-            href: '/profile',
+            href: '/my-account/profile',
             icon: 'profile',
         },
         {
             id: 2,
             name: 'My Notes',
-            href: '/notes',
+            href: '/my-account/notes',
             icon: 'notes',
         },
         {
             id: 3,
             name: 'My Documents',
-            href: '/documents',
+            href: '/my-account/documents',
             icon: 'documents',
         }
     ]

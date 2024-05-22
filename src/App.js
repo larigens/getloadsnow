@@ -9,17 +9,22 @@ import { NavBar } from './components/Header/NavBar/NavBar.js';
 import { Footer } from './components/Footer.js';
 import { Partners } from './pages/Partners.js';
 import ReactGA from 'react-ga';
-import { LoadMap } from './pages/LoadMap.js';
-import { PostTrucks } from './pages/PostTrucks.js';
+import { LoadMap } from './pages/carriers/LoadMap.js';
+import { PostTrucks } from './pages/carriers/PostTrucks.js';
 import { SubHeader } from './components/SubHeader.js';
 import { Login } from './pages/Login.js';
-import { ViewMyTrucks } from './pages/ViewMyTrucks.js';
+import { ViewMyTrucks } from './pages/carriers/ViewMyTrucks.js';
 import { Recent } from './pages/Recent.js';
 import { Logout } from './pages/Logout.js';
 import { MyAccount } from './pages/MyAccount.js';
 import { Profile } from './pages/Profile.js';
 import { Notes } from './pages/Notes.js';
 import { Documents } from './pages/Documents.js';
+import { Signup } from './pages/Signup.js';
+import { FindTrucks } from './pages/brokers/FindTrucks.js';
+import { TruckMap } from './pages/brokers/TruckMap.js';
+import { ViewMyLoads } from './pages/brokers/ViewMyLoads.js';
+import { PostLoads } from './pages/brokers/PostLoads.js';
 
 export const App = () => {
   useEffect(() => {
@@ -36,18 +41,24 @@ export const App = () => {
       <Container>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/loadmap" element={<LoadMap />} />
-          <Route path="/trucks" element={<PostTrucks />} />
-          <Route path="/posttrucks" element={<PostTrucks />} />
-          <Route path="/viewmytrucks" element={<ViewMyTrucks />} />
-          <Route path="/recent" element={<Recent />} />
+          <Route path="/carriers/loadmap" element={<LoadMap />} />
+          <Route path="/carriers/posttrucks" element={<PostTrucks />} />
+          <Route path="/carriers/viewmytrucks" element={<ViewMyTrucks />} />
+          <Route path="/carriers/recent" element={<Recent />} />
+          <Route path="/brokers/findtrucks" element={<FindTrucks />} />
+          <Route path="/brokers/truckmap" element={<TruckMap />} />
+          <Route path="/brokers/postloads" element={<PostLoads />} />
+          <Route path="/brokers/viewmyloads" element={<ViewMyLoads />} />
+          <Route path="/brokers/recent" element={<Recent />} />
+
           <Route path="/partners" element={<Partners />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
           <Route path='/logout' element={<Logout />} />
           <Route path='/my-account' element={<MyAccount />} />
-          <Route path='/profile' element={<Profile />} />
-          <Route path='/notes' element={<Notes />} />
-          <Route path='/documents' element={<Documents />} />
+          <Route path='/my-account/profile' element={<Profile />} />
+          <Route path='/my-account/notes' element={<Notes />} />
+          <Route path='/my-account/documents' element={<Documents />} />
         </Routes>
       </Container>
       <Footer />
