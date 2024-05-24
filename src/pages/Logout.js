@@ -8,7 +8,7 @@ export const Logout = () => {
     const [iframeLoaded, setIframeLoaded] = useState(false);
 
     useEffect(() => {
-        const iframe = document.getElementById('gsfIframe');
+        const iframe = document.getElementById('df_iframe');
         if (iframe) {
             iframe.onload = () => {
                 setIframeLoaded(true);

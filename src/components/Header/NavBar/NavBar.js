@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -5,7 +6,7 @@ export const NavBar = () => {
     const location = useLocation();
 
     function classNames(...classes) {
-        return classes.filter(Boolean).join(' ')
+        return classes.filter(Boolean).join(' ');
     }
 
     const navlinks = [
@@ -89,35 +90,59 @@ export const NavBar = () => {
         {
             id: 5,
             name: 'Partners',
-            href: '/Partners',
+            href: '/partners',
             current: location.pathname === '/partners',
             isDropdown: false
-        },
-        {
-            id: 6,
-            name: 'My Account',
-            href: '/my-account',
-            current: location.pathname === '/my-account',
-            isDropdown: true,
-            dropDownItems: [
-                {
-                    id: '61',
-                    name: 'My Account',
-                    href: '/my-account'
-                },
-                {
-                    id: '62',
-                    name: 'Login',
-                    href: '/login'
-                },
-                {
-                    id: '63',
-                    name: 'Log Out',
-                    href: '/logout'
-                }
-            ]
         }
     ];
+
+    const [isLoginPage, setIsLoginPage] = useState(false);
+
+    useEffect(() => {
+        const iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = 'https://www.directfreight.com/gsquared-home/user/profile';
+        document.body.appendChild(iframe);
+
+        const checkIframe = () => {
+            try {
+                const iframeUrl = iframe.contentWindow.location.href;
+                console.log('Iframe URL:', iframeUrl);  // Log the URL to check what it is
+                if (iframeUrl.includes('user/login')) {
+                    setIsLoginPage(false);
+                } else {
+                    setIsLoginPage(true);
+                }
+            } catch (error) {
+                console.error('Error accessing iframe content:', error);  // Log the error
+                setIsLoginPage(false);
+            } finally {
+                // Ensure iframe removal happens only if it's still a child of the document body
+                if (document.body.contains(iframe)) {
+                    document.body.removeChild(iframe);
+                }
+            }
+        };
+
+        iframe.onload = () => {
+            console.log('Iframe loaded');
+            checkIframe();
+        };
+        iframe.onerror = () => {
+            console.log('Iframe error');
+            setIsLoginPage(false);
+            if (document.body.contains(iframe)) {
+                document.body.removeChild(iframe);
+            }
+        };
+
+        return () => {
+            // Cleanup iframe if it exists in the DOM
+            if (document.body.contains(iframe)) {
+                document.body.removeChild(iframe);
+            }
+        };
+    }, []);
 
     return (
         <Navbar expand="lg" data-bs-theme="dark" className='mt-3'>
@@ -150,10 +175,35 @@ export const NavBar = () => {
                             style={{ borderColor: '#5ea7db' }}
                         >
                             {link.name}
-                        </Nav.Link> // Added this line to handle non-dropdown links
+                        </Nav.Link>
                     ))}
+                    {isLoginPage ? (
+                        <Nav.Link
+                            as={Link}
+                            to='/my-account'
+                            className={classNames(
+                                location.pathname === '/my-account' ? 'active' : 'light-shades light-accent-hv',
+                                'p-2 mr-2 fs-18 text poppins-regular'
+                            )}
+                            style={{ borderColor: '#5ea7db' }}
+                        >
+                            My Account
+                        </Nav.Link>
+                    ) : (
+                        <Nav.Link
+                            as={Link}
+                            to='/login'
+                            className={classNames(
+                                location.pathname === '/login' ? 'active' : 'light-shades light-accent-hv',
+                                'p-2 mr-2 fs-18 text poppins-regular'
+                            )}
+                            style={{ borderColor: '#5ea7db' }}
+                        >
+                            Login
+                        </Nav.Link>
+                    )}
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-    )
-}
+    );
+};

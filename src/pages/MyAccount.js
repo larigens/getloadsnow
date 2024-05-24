@@ -21,6 +21,12 @@ export const MyAccount = () => {
             name: 'My Documents',
             href: '/my-account/documents',
             icon: 'documents',
+        },
+        {
+            id: 4,
+            name: 'Log Out',
+            href: '/logout',
+            icon: 'logout',
         }
     ]
 
