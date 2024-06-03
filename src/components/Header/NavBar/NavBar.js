@@ -106,7 +106,7 @@ export const NavBar = () => {
 
         const checkIframe = () => {
             try {
-                const iframeUrl = iframe.contentWindow.location.href;
+                const iframeUrl = iframe.src;
                 console.log('Iframe URL:', iframeUrl);  // Log the URL to check what it is
                 if (iframeUrl.includes('user/login')) {
                     setIsLoginPage(false);

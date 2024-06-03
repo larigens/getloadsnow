@@ -1,7 +1,8 @@
 import { ImProfile } from "react-icons/im";
 import { CgNotes } from "react-icons/cg";
 import { IoDocumentsOutline } from "react-icons/io5";
-import { IoIosLogOut } from "react-icons/io";
+// import { IoIosLogOut } from "react-icons/io";
+import { FaUserLock } from "react-icons/fa";
 
 export const GetIcon = ({ icon }) => {
     if (icon === 'profile') {
@@ -12,6 +13,6 @@ export const GetIcon = ({ icon }) => {
         return <IoDocumentsOutline className="w-80 white-img-hv" />;
     }
     else if (icon === 'logout') {
-        return <IoIosLogOut className="w-80 white-img-hv" />;
+        return <FaUserLock className="w-80 white-img-hv" />;
     }
 }

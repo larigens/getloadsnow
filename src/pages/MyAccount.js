@@ -24,7 +24,7 @@ export const MyAccount = () => {
         },
         {
             id: 4,
-            name: 'Log Out',
+            name: 'Login / Log Out',
             href: '/logout',
             icon: 'logout',
         }
