@@ -3,28 +3,23 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import { Home } from './pages/Home.js';
-import { Header } from './components/Header/Header.js';
-import { NavBar } from './components/Header/NavBar/NavBar.js';
-import { Footer } from './components/Footer.js';
-import { Partners } from './pages/Partners.js';
+import { Home } from './pages/Home.jsx';
+import { Header } from './components/Header/Header.jsx';
+import { NavBar } from './components/Header/NavBar/NavBar.jsx';
+import { Footer } from './components/Footer.jsx';
+import { Partners } from './pages/Partners.jsx';
 import ReactGA from 'react-ga';
-import { LoadMap } from './pages/carriers/LoadMap.js';
-import { PostTrucks } from './pages/carriers/PostTrucks.js';
-import { SubHeader } from './components/SubHeader.js';
-import { Login } from './pages/Login.js';
-import { ViewMyTrucks } from './pages/carriers/ViewMyTrucks.js';
-import { Recent } from './pages/Recent.js';
-import { Logout } from './pages/Logout.js';
-import { MyAccount } from './pages/MyAccount.js';
-import { Profile } from './pages/Profile.js';
-import { Notes } from './pages/Notes.js';
-import { Documents } from './pages/Documents.js';
-import { Signup } from './pages/Signup.js';
-import { FindTrucks } from './pages/brokers/FindTrucks.js';
-import { TruckMap } from './pages/brokers/TruckMap.js';
-import { ViewMyLoads } from './pages/brokers/ViewMyLoads.js';
-import { PostLoads } from './pages/brokers/PostLoads.js';
+import { SubHeader } from './components/SubHeader.jsx';
+import { Login } from './pages/Login.jsx';
+import { Recent } from './pages/Recent.jsx';
+import { Logout } from './pages/Logout.jsx';
+import { MyAccount } from './pages/MyAccount.jsx';
+import { Profile } from './pages/Profile.jsx';
+import { Notes } from './pages/Notes.jsx';
+import { Documents } from './pages/Documents.jsx';
+import { Signup } from './pages/Signup.jsx';
+import { PostLoads, ViewMyLoads, TruckMap, FindTrucks } from './pages/Brokers.jsx';
+import { LoadMap, PostTrucks, ViewMyTrucks } from './pages/Carriers.jsx';
 
 export const App = () => {
   useEffect(() => {
@@ -38,19 +33,17 @@ export const App = () => {
         <NavBar />
       </Header>
       <SubHeader />
-      <Container>
+      <Container fluid>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/carriers/loadmap" element={<LoadMap />} />
           <Route path="/carriers/posttrucks" element={<PostTrucks />} />
           <Route path="/carriers/viewmytrucks" element={<ViewMyTrucks />} />
-          <Route path="/carriers/recent" element={<Recent />} />
-          <Route path="/brokers/findtrucks" element={<FindTrucks />} />
+          <Route path="/recent" element={<Recent />} />
           <Route path="/brokers/truckmap" element={<TruckMap />} />
-          <Route path="/brokers/postloads" element={<PostLoads />} />
           <Route path="/brokers/viewmyloads" element={<ViewMyLoads />} />
-          <Route path="/brokers/recent" element={<Recent />} />
-
+          <Route path="/brokers/postloads" element={<PostLoads />} />
+          <Route path="/brokers/findtrucks" element={<FindTrucks />} />
           <Route path="/partners" element={<Partners />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />

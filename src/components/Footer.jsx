@@ -10,7 +10,7 @@ import { Container, Image } from 'react-bootstrap';
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className='d-flex flex-column justify-content-center align-items-center light-shades' style={{ minHeight: '18vh' }}>
+        <footer className='d-flex flex-column justify-content-center align-items-center light-shades'>
             <Container className='d-flex align-items-center justify-content-center my-3'>
                 <Link to="https://www.gsquaredfunding.com/" className='my-1 mx-3'>
                     <Image src={logogsf} alt="footergsf" width={36} />

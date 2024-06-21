@@ -14,7 +14,7 @@ export const CardCP = ({ name, href, logo, subtitle, description }) => {
                 <Card.Body className='card-body'>
                     <Card.Title className='card-title poppins-semibold text-center mb-4'>{name}</Card.Title>
                     <Card.Subtitle className='my-2 card-subtitle poppins-medium'>{subtitle}</Card.Subtitle>
-                    <Card.Text style={{ textAlign: 'justify' }} className='poppins-light '>
+                    <Card.Text className='poppins-light text-justify '>
                         {description}
                     </Card.Text>
                 </Card.Body>

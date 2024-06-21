@@ -1,7 +1,6 @@
 import { ImProfile } from "react-icons/im";
 import { CgNotes } from "react-icons/cg";
 import { IoDocumentsOutline } from "react-icons/io5";
-// import { IoIosLogOut } from "react-icons/io";
 import { FaUserLock } from "react-icons/fa";
 
 export const GetIcon = ({ icon }) => {

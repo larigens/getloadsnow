@@ -1,5 +1,5 @@
-import { HelmetCP } from '../components/Helmet.js';
-import { Layout } from '../components/Layout.js';
+import { HelmetCP } from '../components/Helmet.jsx';
+import { Layout } from '../components/Layout.jsx';
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';

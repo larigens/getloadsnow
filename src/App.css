@@ -294,4 +294,46 @@ header {
   .logo-heading {
     display: none;
   }
+
+  .main-fill {
+    fill: var(--dark-accent) !important;
+    stroke: var(--dark-accent) !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    display: none;
+  }
+}
+
+.secondary-fill {
+  fill: #eaeaeb;
+  stroke: #eaeaeb;
+}
+
+.dark-accent-fill {
+  fill: var(--dark-accent);
+  stroke: var(--dark-accent);
+}
+
+.main-fill {
+  fill: var(--main-brand);
+  stroke: var(--main-brand);
+}
+
+.bg-dark-accent {
+  background: var(--dark-accent);
+}
+
+.bg-main-brand {
+  background: var(--main-brand);
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.text-justify {
+  text-align: justify;
 }

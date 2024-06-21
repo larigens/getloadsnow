@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { CardCP } from '../components/Card.js';
+import { CardCP } from '../components/Card.jsx';
 import gsfLogo from '../assets/partners/gsf.png';
 import aficwLogo from '../assets/partners/aficw.png';
 import factorsNetLogo from '../assets/partners/factorsnet.png';
-import { HelmetCP } from '../components/Helmet.js';
+import { HelmetCP } from '../components/Helmet.jsx';
 
 export const Partners = () => {
 

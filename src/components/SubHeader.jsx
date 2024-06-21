@@ -6,7 +6,7 @@ export const SubHeader = () => {
     return (
         <Container fluid className='text-center my-3'>
             <Link to='https://gsquaredfunding.com/' target="_blank" rel="noopener noreferrer">
-                <Image src={ad} alt="gsf ad" className='img-fluid' style={{ borderRadius: '10px' }} />
+                <Image src={ad} alt="gsf ad" className='img-fluid radius-10' />
             </Link>
         </Container >
     );

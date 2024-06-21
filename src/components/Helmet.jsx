@@ -7,6 +7,7 @@ export const HelmetCP = ({ pageTitle, pageDescription, pageKeywords }) => {
             <title>{pageTitle}</title>
             <meta name="description" content={pageDescription} />
             <meta name="keywords" content={pageKeywords} />
+            <link rel="canonical" href='https://getloadsnow.com/' />
         </Helmet>
     )
 };

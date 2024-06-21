@@ -1,5 +1,5 @@
-import { HelmetCP } from '../components/Helmet.js';
-import { Layout } from '../components/Layout.js';
+import { HelmetCP } from '../components/Helmet.jsx';
+import { Layout } from '../components/Layout.jsx';
 
 export const Login = () => {
     const source = 'https://www.directfreight.com/gsquared-home/user/login';

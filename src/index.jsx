@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { App } from './App.js';
+import { App } from './App.jsx';
 import * as React from 'react';
 import TagManager from 'react-gtm-module';
 import { HelmetProvider } from 'react-helmet-async';
