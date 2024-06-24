@@ -14,7 +14,7 @@ export const NavBar = () => {
         },
         {
             id: 2,
-            name: 'Carriers & Owner Operators',
+            name: 'Carriers',
             href: '/carriers',
             current: location.pathname.startsWith('/carriers'),
             isDropdown: true,
@@ -36,7 +36,7 @@ export const NavBar = () => {
                 },
                 {
                     id: '23',
-                    name: 'Recent Searches & Alerts',
+                    name: 'Searches & Alerts',
                     href: '/recent'
                 }
             ]
@@ -70,29 +70,23 @@ export const NavBar = () => {
                 },
                 {
                     id: '34',
-                    name: 'Recent Searches & Alerts',
+                    name: 'Searches & Alerts',
                     href: '/recent'
                 }
             ]
         },
-        {
-            id: 4,
-            name: 'Freight Factoring',
-            href: 'https://gsquaredfunding.com/',
-            current: location.pathname === '/freight-factoring'
-        },
+        // {
+        //     id: 4,
+        //     name: 'Freight Factoring',
+        //     href: 'https://gsquaredfunding.com/',
+        //     current: location.pathname === '/freight-factoring'
+        // },
         {
             id: 5,
             name: 'Partners',
             href: '/partners',
             current: location.pathname === '/partners'
-        },
-        {
-            id: 6,
-            name: 'My Account',
-            href: '/my-account',
-            current: location.pathname.startsWith('/my-account')
-        },
+        }
     ];
 
     function classNames(...classes) {
@@ -100,10 +94,10 @@ export const NavBar = () => {
     }
 
     return (
-        <Navbar expand="lg" data-bs-theme="dark" className='mt-3'>
+        <Navbar expand="lg" data-bs-theme="dark">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
+                <Nav>
                     {navlinks.map((link) => (
                         link.isDropdown ? (
                             link.dropDownItems && Array.isArray(link.dropDownItems) ? (
@@ -112,7 +106,7 @@ export const NavBar = () => {
                                     bsPrefix='custom-dropdown'
                                     data-bs-theme="light"
                                     title={link.name}
-                                    className='p-2 mr-2 fs-18 text poppins-regular'
+                                    className='p-2 me-2 fs-18 text poppins-regular'
                                 >
                                     {link.dropDownItems.map(item => (
                                         <NavDropdown.Item key={item.id} as={Link} to={item.href}>{item.name}</NavDropdown.Item>
@@ -121,14 +115,12 @@ export const NavBar = () => {
                             ) : null
                         ) : <Nav.Link
                             key={link.id}
-                            as={link.href.startsWith('http') ? 'a' : Link}
-                            href={link.href}
+                            as={Link}
                             to={link.href}
                             className={classNames(
                                 link.current ? 'active' : 'light-shades light-accent-hv',
-                                'p-2 mr-2 fs-18 text poppins-regular'
+                                'p-2 me-2 fs-18 text poppins-regular border-color'
                             )}
-                            style={{ borderColor: '#5ea7db' }}
                         >
                             {link.name}
                         </Nav.Link>
