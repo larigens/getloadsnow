@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col, Image, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
+import { IoIosLogIn } from "react-icons/io";
 import logo from '../../assets/logo5.png';
 
 export const Header = ({ children }) => {
@@ -34,6 +35,9 @@ export const Header = ({ children }) => {
                 >
                   <NavDropdown.Item as={Link} to='/my-account'>
                     My Account
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to='/login'>
+                    <IoIosLogIn />
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
