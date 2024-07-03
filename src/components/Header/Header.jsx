@@ -36,7 +36,10 @@ export const Header = ({ children }) => {
                   <NavDropdown.Item as={Link} to='/my-account'>
                     My Account
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to='/login'>
+                  <NavDropdown.Item as={Link} to='/signup'>
+                    Create an Account
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to='/logout'>
                     <IoIosLogIn />
                   </NavDropdown.Item>
                 </NavDropdown>
