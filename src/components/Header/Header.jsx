@@ -12,25 +12,24 @@ export const Header = ({ children }) => {
 
   return (
     <header>
-      <Row className='d-flex align-items-center justify-content-end text-end bg-main'>
-        <Col className='d-flex align-items-center justify-content-end me-1'>
+      <Row className='bg-main'>
+        <Col className='d-flex align-items-center justify-content-end mx-0 px-0'>
           <Link to='https://gsquaredfunding.com/' className='light-shades light-accent-hv p-2 me-2 fs-18 text poppins-regular border-color'>
             Freight Factoring
           </Link>
-          <Navbar expand='lg' className='p-2 me-1' data-bs-theme='dark'>
+          <Navbar expand='lg' className='p-2' data-bs-theme='dark'>
             <FaUserCircle
               className='light-shades light-accent-hv icon-30'
               onClick={toggleDropdown}
               aria-controls='user-navbar-nav'
             />
             <Navbar.Collapse in={showDropdown} id='user-navbar-nav'>
-              <Nav className='ms-auto mt-3 pt-1'>
+              <Nav className='mt-3 pt-1'>
                 <NavDropdown
-                  className={`p-2 me-2 fs-18 text poppins-regular ${showDropdown ? 'show' : ''}`}
+                  className='p-2 me-2 fs-18 text poppins-regular'
                   bsPrefix='custom-dropdown-none'
                   data-bs-theme="light"
                   show={showDropdown}
-                  onMouseLeave={() => setShowDropdown(false)}
                   align={{ lg: 'end' }}
                 >
                   <NavDropdown.Item as={Link} to='/my-account'>

@@ -209,6 +209,10 @@ header {
   background-color: var(--dark-accent);
 }
 
+header {
+  overflow: hidden !important;
+}
+
 .glassmorphism {
   box-shadow: 0 8px 25px 0 rgba(31, 38, 135, 0.37);
 }
@@ -377,17 +381,10 @@ header {
 
   .navbar-collapse .nav {
     flex-direction: column;
-    width: 100%;
-  }
-
-  .nav-link,
-  .dropdown-menu {
-    width: 100%;
   }
 
   .nav-link {
     text-align: left;
-    padding-left: 1rem;
   }
 }
 
