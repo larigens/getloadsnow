@@ -9,7 +9,9 @@ export const Profile = () => {
             <HelmetCP
                 pageTitle={'Your Profile Page - Get Loads Now'}
                 pageDescription={'Update your profile and manage your account settings.'}
-                pageKeywords={'profile page, account settings, manage profile, update information, load board profile'} />
+                pageKeywords={'profile page, account settings, manage profile, update information, load board profile, find loads'}
+                canonicalURL={'my-account/profile'}
+            />
             <Layout source={source} />
         </>
     );

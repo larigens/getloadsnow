@@ -12,8 +12,8 @@ export const Header = ({ children }) => {
 
   return (
     <header>
-      <Row className='bg-main'>
-        <Col className='d-flex align-items-center justify-content-end mx-0 px-0'>
+      <Row className='bg-main m-auto'>
+        <Col md={12} className='d-flex align-items-center justify-content-end'>
           <Link to='https://gsquaredfunding.com/' className='light-shades light-accent-hv p-2 me-2 fs-18 text poppins-regular border-color'>
             Freight Factoring
           </Link>
@@ -47,7 +47,7 @@ export const Header = ({ children }) => {
           </Navbar>
         </Col>
       </Row>
-      <Row className='d-flex align-items-baseline'>
+      <Row className='d-flex align-items-baseline m-auto p-auto'>
         <Col xs={4} sm={4} lg={3}>
           <Link to='/' className='d-flex align-items-baseline'>
             <Image

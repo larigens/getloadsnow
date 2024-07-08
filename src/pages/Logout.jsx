@@ -20,7 +20,12 @@ export const Logout = () => {
 
     return (
         <>
-            <HelmetCP pageTitle={'Logout - Load Board for Trucking Companies'} pageDescription={'Find and post loads for trucking companies on our free load board. Get access to thousands of loads daily.'} pageKeywords={'load map, interactive map, trucking load board, trucking companies, find loads, post loads, get loads, free load board, book loads'} />
+            <HelmetCP
+                pageTitle={'Logout - Load Board for Trucking Companies'}
+                pageDescription={'Find and post loads for trucking companies on our free load board. Get access to thousands of loads daily.'}
+                pageKeywords={'load map, interactive map, trucking load board, trucking companies, find loads, post loads, get loads, free load board, book loads'}
+                canonicalURL={'logout'}
+            />
             <Container className="d-flex align-items-center justify-content-center my-4">
                 <Container fluid className="p-0 d-flex align-items-center" style={{ minHeight: '75vh' }}>
                     {!iframeLoaded ? (

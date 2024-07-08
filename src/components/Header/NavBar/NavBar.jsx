@@ -106,7 +106,7 @@ export const NavBar = () => {
                                     bsPrefix='custom-dropdown'
                                     data-bs-theme="light"
                                     title={link.name}
-                                    className='p-2 fs-18 text poppins-regular'
+                                    className='p-2 me-2 fs-18 text poppins-regular'
                                 >
                                     {link.dropDownItems.map(item => (
                                         <NavDropdown.Item key={item.id} as={Link} to={item.href}>{item.name}</NavDropdown.Item>

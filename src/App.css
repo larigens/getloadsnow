@@ -209,10 +209,6 @@ header {
   background-color: var(--dark-accent);
 }
 
-header {
-  overflow: hidden !important;
-}
-
 .glassmorphism {
   box-shadow: 0 8px 25px 0 rgba(31, 38, 135, 0.37);
 }
