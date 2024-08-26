@@ -14,73 +14,73 @@ export const NavBar = () => {
         },
         {
             id: 2,
+            name: 'Free Fuel Card',
+            href: 'https://go.atob.com/g-squared-prepaid',
+            current: location.pathname === 'https://go.atob.com/g-squared-prepaid'
+        },
+        {
+            id: 3,
             name: 'Carriers',
             href: '/carriers',
             current: location.pathname.startsWith('/carriers'),
             isDropdown: true,
             dropDownItems: [
                 {
-                    id: '20',
+                    id: '30',
                     name: 'Load Map',
                     href: '/carriers/loadmap'
                 },
                 {
-                    id: '21',
+                    id: '31',
                     name: 'Post Trucks',
                     href: '/carriers/posttrucks'
                 },
                 {
-                    id: '22',
+                    id: '32',
                     name: 'View My Trucks',
                     href: '/carriers/viewmytrucks'
                 },
                 {
-                    id: '23',
+                    id: '33',
                     name: 'Searches & Alerts',
                     href: '/recent'
                 }
             ]
         },
         {
-            id: 3,
+            id: 4,
             name: 'Shippers & Brokers',
             href: '/brokers',
             current: location.pathname.startsWith('/brokers'),
             isDropdown: true,
             dropDownItems: [
                 {
-                    id: '30',
+                    id: '40',
                     name: 'Find Trucks',
                     href: '/brokers/findtrucks'
                 },
                 {
-                    id: '31',
+                    id: '41',
                     name: 'Truck Map',
                     href: '/brokers/truckmap'
                 },
                 {
-                    id: '32',
+                    id: '42',
                     name: 'Post Loads',
                     href: '/brokers/postloads'
                 },
                 {
-                    id: '33',
+                    id: '43',
                     name: 'View My Loads',
                     href: '/brokers/viewmyloads'
                 },
                 {
-                    id: '34',
+                    id: '44',
                     name: 'Searches & Alerts',
                     href: '/recent'
                 }
             ]
         },
-        // {
-        //     id: 4,
-        //     name: 'Freight Factoring',
-        //     href: 'https://gsquaredfunding.com/',
-        //     current: location.pathname === '/freight-factoring'
-        // },
         {
             id: 5,
             name: 'Partners',

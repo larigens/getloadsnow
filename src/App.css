@@ -388,3 +388,23 @@ header {
   width: 30px;
   height: auto;
 }
+
+/* Customizing the carousel indicators */
+.carousel-indicators {
+  position: static !important; /* This removes the absolute positioning */
+  margin-top: 10px !important; /* Adds space above the indicators */
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.carousel-indicators li {
+  background-color: #000 !important; /* Custom dot color */
+  width: 10px !important; /* Custom dot width */
+  height: 10px !important; /* Custom dot height */
+  border-radius: 50% !important; /* Make dots round */
+  margin: 0 5px !important; /* Add space between dots */
+}
+
+.carousel-indicators .active {
+  background-color: #fff !important; /* Color for active dot */
+}
